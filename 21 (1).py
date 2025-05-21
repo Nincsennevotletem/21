@@ -25,7 +25,7 @@ jatek = input("Egy vagy kettő játékos:")
 
 if jatek == "Egy":
     print("Egy játékos mód!")
-    print(f"Kezdjük is a játékot a kártsáid {ertek}!")
+    print(f"Kezdjük is a játékot a kártyáid {ertek}!")
     keres = input("Kérsz még egy lapot?")
     if keres == "Igen":
         ertek.append(p1Rh)
@@ -41,8 +41,14 @@ elif jatek == "Kettő":
     print("Adjátok meg a felhasználó neveteket!")
     j1 = input("Első játékos neve:")
     j2 = input("Második játékos neve:")
-    print(f"Kezdjük is a játékot a kártsáid {j1}: {p1Re + p1Rm} és {j2}: {p2Re + p2Rm}!")
+    print(f"Kezdjük is a játékot a kártyáid {j1}: {p1Re + p1Rm} és {j2}: {p2Re + p2Rm}!")
     val1 = input(f"{j1} kérsz még egy lapot?")
+    if val1 == "igen":
+        jpu1 = random.randint(2, 11)
+        print(f"Kértél még egy lapot! A kártya! {jpu1}")
+        print(f"A kártyáid összege:{p1Re + p1Rm + jpu1 }")
+    else:
+        print(f"{j1} meg áltál ennyi kártyánál: {p1Re + p1Rm}")
 
 
 else:
