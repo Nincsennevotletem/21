@@ -63,6 +63,20 @@ elif jatek == "Kettő":
     print(f"Összegzés!")
     print(f"A lapjaid értéke {j1}:{szamok1} A lapjaid értéke {j2}:{szamok2}")
 
+    if szamok1 > 21:
+        print(f"{j1} túl nayg a szám vesztettél!")
+        print(f"Gartulálok {j2}")
+    elif szamok2 > 21:
+         print(f"{j2} túl nayg a szám vesztettél!")
+         print(f"Gartulálok {j1}")
+    else:
+        print("Itt az ideje az eredmény hírdetésnek!")
+        if szamok1 > szamok2:
+            print(f"{j1} Gartulálok nyertél!")
+
+        else:
+            print(f"{j2} Gartulálok nyertél!")
+        
 
 
 
