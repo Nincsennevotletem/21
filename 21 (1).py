@@ -47,6 +47,7 @@ elif jatek == "Kettő":
         jpu1 = random.randint(2, 11)
         print(f"Kértél még egy lapot! A kártya! {jpu1}")
         print(f"A kártyáid összege:{p1Re + p1Rm + jpu1 }")
+        szamok1 = p2Re + p2Rm + jpu1
     else:
         print(f"{j1} meg áltál ennyi kártyánál: {p1Re + p1Rm}")
 
@@ -55,8 +56,12 @@ elif jatek == "Kettő":
         jpu2 = random.randint(2, 11)
         print(f"Kértél még egy lapot! A kártya!{jpu2}")
         print(f"A lapjaid összege:{p2Re + p2Rm + jpu2}")
+        szamok2 = p2Re + p2Rm + jpu2
     else:
         print(f"Nem kértél több lapot! A lapjaid összege mardt:{p2Re + p2Rm}")
+
+    print(f"Összegzés!")
+    
 
 
 
