@@ -50,6 +50,15 @@ elif jatek == "Kettő":
     else:
         print(f"{j1} meg áltál ennyi kártyánál: {p1Re + p1Rm}")
 
+    val2 = input(f"{j2} Ez a te időd kérsz még egy lapot?")
+    if val2 == "igen":
+        jpu2 = random.randint(2, 11)
+        print(f"Kértél még egy lapot! A kártya!{jpu2}")
+        print(f"A lapjaid összege:{p2Re + p2Rm + jpu2}")
+    else:
+        print(f"Nem kértél több lapot! A lapjaid összege mardt:{p2Re + p2Rm}")
+
+
 
 else:
     print("Sajnos nem értem😥. Megismételnéd?")
