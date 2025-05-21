@@ -25,7 +25,7 @@ jatek = input("Egy vagy kettő játékos:")
 
 if jatek == "Egy":
     print("Egy játékos mód!")
-    print(f"Kezdjük is a játékot a kártyáid {ertek}!")
+    print(f"Kezdjük is a játékot Krtyáid {ertek}!")
     keres = input("Kérsz még egy lapot?")
     if keres == "Igen":
         ertek.append(p1Rh)
@@ -81,4 +81,4 @@ elif jatek == "Kettő":
 
 
 else:
-    print("Sajnos nem értem😥. Megismételnéd?")
+    print("Sajnos nem értem. 😥")
