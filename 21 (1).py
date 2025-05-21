@@ -61,7 +61,8 @@ elif jatek == "Kettő":
         print(f"Nem kértél több lapot! A lapjaid összege mardt:{p2Re + p2Rm}")
 
     print(f"Összegzés!")
-    
+    print(f"A lapjaid értéke {j1}:{szamok1} A lapjaid értéke {j2}:{szamok2}")
+
 
 
 
